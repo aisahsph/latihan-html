@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Pendaftaran</title>
+</head>
+<body bgcolor="#f4f4f9" style="font-family: Arial, sans-serif; margin: 0; padding: 0;">
+
+    <table width="100%" bgcolor="#4a90e2" cellpadding="15">
+        <tr>
+            <td align="center">
+                <font color="white" size="6"><b>Form Pendaftaran</b></font>
+            </td>
+        </tr>
+    </table>
+
+    <table width="100%" bgcolor="#333" cellpadding="10">
+        <tr align="center">
+            <td><a href="blog.html" style="color:white; text-decoration:none;"><b>Blog</b></a></td>
+            <td><a href="form.html" style="color:white; text-decoration:none;"><b>Form Pendaftaran</b></a></td>
+            <td><a href="tabel.html" style="color:white; text-decoration:none;"><b>Tabel Nilai</b></a></td>
+            <td><a href="cv.html" style="color:white; text-decoration:none;"><b>Curriculum Vitae</b></a></td>
+        </tr>
+    </table>
+
+    <br>
+
+    <table width="80%" align="center" cellpadding="20" bgcolor="#ffffff" style="box-shadow: 0 0 8px #ccc; border-radius: 10px;">
+        <tr>
+            <td>
+                <form action="proses_pendaftaran.html" method="post">
+                    <fieldset>
+                        <legend><b>Data Pribadi</b></legend>
+                        
+                        <div>
+                            <label for="nama">Nama Lengkap:</label><br>
+                            <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" required style="width:100%; padding:8px; border-radius:5px; border:1px solid #ccc;">
+                        </div>
+                        <br>
+                        
+                        <div>
+                            <label>Jenis Kelamin:</label><br>
+                            <input type="radio" id="laki" name="jenis_kelamin" value="laki">
+                            <label for="laki">Laki-laki</label>
+                            
+                            <input type="radio" id="perempuan" name="jenis_kelamin" value="perempuan">
+                            <label for="perempuan">Perempuan</label>
+                        </div>
+                        <br>
+                        
+                        <div>
+                            <label for="tempat_lahir">Tempat Lahir:</label><br>
+                            <input type="text" id="tempat_lahir" name="tempat_lahir" placeholder="Kota kelahiran" style="width:100%; padding:8px; border-radius:5px; border:1px solid #ccc;">
+                        </div>
+                        <br>
+                        
+                        <div>
+                            <label for="tanggal_lahir">Tanggal Lahir:</label><br>
+                            <input type="date" id="tanggal_lahir" name="tanggal_lahir" style="width:100%; padding:8px; border-radius:5px; border:1px solid #ccc;">
+                        </div>
+                        <br>
+                        
+                        <div>
+                            <label>Hobi:</label><br>
+                            <input type="checkbox" id="membaca" name="hobi" value="membaca">
+                            <label for="membaca">Membaca</label><br>
+                            
+                            <input type="checkbox" id="olahraga" name="hobi" value="olahraga">
+                            <label for="olahraga">Olahraga</label><br>
+                            
+                            <input type="checkbox" id="musik" name="hobi" value="musik">
+                            <label for="musik">Musik</label><br>
+                            
+                            <input type="checkbox" id="traveling" name="hobi" value="traveling">
+                            <label for="traveling">Traveling</label><br>
+                            
+                            <input type="checkbox" id="lainnya" name="hobi" value="lainnya">
+                            <label for="lainnya">Lainnya</label>
+                        </div>
+                        <br>
+                        
+                        <div>
+                            <label for="password">Password:</label><br>
+                            <input type="password" id="password" name="password" placeholder="Minimal 8 karakter" required style="width:100%; padding:8px; border-radius:5px; border:1px solid #ccc;">
+                        </div>
+                        <br>
+                        
+                        <div>
+                            <input type="checkbox" id="persetujuan" name="persetujuan" required>
+                            <label for="persetujuan">Saya menyetujui syarat dan ketentuan yang berlaku</label>
+                        </div>
+                    </fieldset>
+                    
+                    <br>
+                    
+                    <input type="reset" value="Reset" style="background:#e74c3c; color:white; border:none; padding:10px 20px; border-radius:5px; cursor:pointer;">
+                    <input type="submit" value="Submit" style="background:#4a90e2; color:white; border:none; padding:10px 20px; border-radius:5px; cursor:pointer;">
+                </form>
+            </td>
+        </tr>
+    </table>
+
+    <br><br>
+
+    <table width="100%" bgcolor="#4a90e2" cellpadding="15">
+        <tr>
+            <td align="center">
+                <font color="white">&copy; 2023 Blog Saya - Semua Hak Dilindungi</font>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
